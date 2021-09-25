@@ -1,0 +1,411 @@
+:root {
+  --title-color: #e4c829;
+  --text-color: #f7f6f5;
+  --acent-color: #2196f3;
+}
+
+html {
+  font-family: Roboto;
+  color: var(--text-color);
+  font-style: normal;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1, 16;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+}
+.accent {
+  color: var(--acent-color);
+}
+.main-nav {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 15px;
+  outline: 1px solid aqua;
+  align-items: center;
+}
+.main-nav_contact {
+  display: flex;
+}
+.main-nav_item {
+  outline: 1px solid tomato;
+  width: 30px;
+}
+.main-nav_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-svg {
+  height: 30px;
+  width: 30px;
+}
+
+.nav-svg {
+  fill: var(--title-color);
+}
+.main-nav_item:hover .nav-svg,
+.main-nav_item:focus .nav-svg {
+  fill: var(--acent-color);
+}
+.hero-text {
+  display: block;
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 360px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: tomato;
+}
+.hero {
+  display: block;
+  height: 400px;
+  outline: 1px solid black;
+  padding-top: 158px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../homework7/img/Header\ img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main-nav_logo_accent {
+  position: absolute;
+  width: 149px;
+  height: 28px;
+  left: 168px;
+  top: 16px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+.game {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav_contact::after {
+  position: relative;
+  content: "";
+  bottom: 28px;
+  left: 135px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--acent-color);
+  border-radius: 2px;
+  transform: translateY(33px);
+}
+.mine {
+  display: block;
+  height: 400px;
+  padding-top: 158px;
+  background-image: url(../homework7/img/mine.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* заголовок тексту*/
+.minecraft {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: #2196f3;
+}
+/*текст про майнкрафт*/
+.mine-craft {
+  position: absolute;
+  width: 426px;
+  height: 31px;
+  left: 39px;
+  top: 870px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.mine-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+/*амогус*/
+.amongus {
+  display: block;
+  height: 400px;
+  padding-top: 158px;
+  background-image: url(../homework7/img/amogus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.among-us {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: #130202;
+}
+.amogus {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+/*need for speed*/
+.needforspeed {
+  display: block;
+  height: 400px;
+  padding-top: 158px;
+  background-image: url(../homework7/img/need.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.needfor {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.needf {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*world of tanks*/
+.worldoftanks {
+  display: block;
+  height: 400px;
+  padding-top: 158px;
+  background-image: url(../homework7/img/tank.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tanks {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.tank {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*contact us*/
+.contact {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1, 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form {
+  width: 400px;
+  margin: 10px auto;
+}
+.input {
+  width: 370px;
+  height: 40px;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.input:hover,
+.input:focus,
+.input:active {
+  outline: none;
+  background-color: cyan;
+}
+
+.container {
+  margin: 10px auto;
+}
+.lable {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.textarea {
+  width: 370px;
+  height: 120px;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+.textarea:hover,
+.textarea:focus,
+.textarea:active {
+  outline: none;
+  border: 1px solid green;
+}
+.button {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+  height: 50px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+.button:hover,
+.button:focus {
+  color: black;
+  background-color: blue;
+  outline: none;
+}
+.footer {
+  background-color: blue;
+  width: 100%;
+  height: 200px;
+  padding: 30px;
+  text-align: center;
+}
+.address-main {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #e91616;
+}
+.address_email {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(230, 27, 27, 0.6);
+}
+.div_foot {
+  width: 250px;
+  margin: 0 auto;
+}
